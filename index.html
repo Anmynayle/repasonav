@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repaso</title>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="/assents/style.css ">
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar__interior">
+      <div class="navbar__logo">
+        <a href="/">
+          <i class='bx bx-registered'></i>
+          <span>Anmy Moreno</span>
+        </a>
+      </div>
+      <div id="navbar__menu" class="navbar__menu">
+        <button id="navbar__cerrar" class="navbar__cerrar">
+          <i class='bx bx-x' ></i>
+        </button>
+        <nav class="navbar__lista">
+          <a href="#" class="navbar__link">Inicio</a>
+          <a href="#" class="navbar__link">Sobre Mí</a>
+          <a href="#" class="navbar__link">Servicios</a>
+          <a href="#" class="navbar__link">Proyectos</a>
+        </nav>
+      </div>
+      <div class="navbar__btn">
+        <button id="navbar__btn" class="navbar__btn-accion">
+          <i class='bx bx-menu' ></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const menu = document.getElementById('navbar__menu')
+    const abrir = document.getElementById('navbar__btn')
+    const cerrar = document.getElementById('navbar__cerrar')
+
+    abrir.addEventListener('click', (e) => {
+      menu.classList.add('mostrar__menu')
+    })
+
+    cerrar.addEventListener('click', (e) => {
+      menu.classList.remove('mostrar__menu')
+    })
+  </script>
+<div class="contenedor__todo">
+    <h1>Repaso</h1>
+    <div class="contenedor__principal">
+      <div class="contenedor__imagen">
+        <img src="https://josefacchin.com/wp-content/uploads/2020/02/como-quitar-el-fondo-de-una-imagen.png" alt="Una persona de pelo naranja, sentado en su computadora y tiene un gatito acostado sobre un libro.">
+      </div>
+      <div class="contenedor__interno">
+        <h2>Titulo</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <main class="contenedor__secundario">
+      <section class="section">
+        <h2>Servicios:</h2>
+        <div class="contenedor__tarjetas">
+          <div class="tarjeta">
+            <div class="tarjeta__interior">
+              <i class='bx bxl-html5 orange'></i>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div> 
+          </div>
+          <div class="tarjeta">
+            <div class="tarjeta__interior">
+              <i class='bx bxl-css3 blue' ></i>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div> 
+          </div>
+          <div class="tarjeta">
+            <div class="tarjeta__interior">
+              <i class='bx bxl-nodejs green' ></i>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div> 
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2>Proyectos:</h2>
+        <div class="contenedor__proyectos">
+          <div class="proyecto">
+            <div class="proyecto__interior">
+              <div class="proyecto__contenedor-imagen">
+                <img src="https://blog.facialix.com/wp-content/uploads/2021/05/14253_1.jpg" alt="img">
+              </div>
+              <div class="proyecto__contenedor-informacion">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="proyecto__accion">
+                  <a href="#" class="proyecto__boton">github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="proyecto">
+            <div class="proyecto__interior">
+              <div class="proyecto__contenedor-imagen">
+                <img src="https://aelaschool.com/wp-content/uploads/2019/11/artigoQualadiferencaentreUXeUIDesign_01aaa69067bf7dd2a32f9fba1df84b12_2000.png" alt="img">
+              </div>
+              <div class="proyecto__contenedor-informacion">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div>
+                  <a href="#" class="proyecto__boton">github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="proyecto">
+            <div class="proyecto__interior">
+              <div class="proyecto__contenedor-imagen">
+                <img src="https://www.des1gnon.com/wp-content/uploads/2018/10/Des1gnON-Melhores-sites-para-Aprender-UX-e-UI-Design-fb.png" alt="img">
+              </div>
+              <div class="proyecto__contenedor-informacion">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div>
+                  <a href="#" class="proyecto__boton">github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="proyecto">
+            <div class="proyecto__interior">
+              <div class="proyecto__contenedor-imagen">
+                <img src="http://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/25gE/image/2LMACll2QP9ezP386lbEoC5XwnY.png" alt="img">
+              </div>
+              <div class="proyecto__contenedor-informacion">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div>
+                  <a href="#" class="proyecto__boton">github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+ 
+
+</body>
+</html>
